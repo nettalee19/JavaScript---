@@ -15,7 +15,7 @@
 
   const num2 = null;
   let undi = undefined;
-  let symb = '!';
+  let symb = Symbol('!');
 
   console.log(typeof(string)); 
   console.log(typeof(num));
