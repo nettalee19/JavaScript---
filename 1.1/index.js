@@ -17,13 +17,14 @@
   let undi = undefined;
   let symb = '!';
 
-  console.log(string);
-  console.log(num);
-  console.log(person.firstName, person.lastName, person.age);
-  console.log(isTrue);
-  console.log(num2);
-  console.log(undi);
-  console.log(symb);
+  console.log(typeof(string)); 
+  console.log(typeof(num));
+  // console.log(person.firstName, person.lastName, person.age);
+  console.log(typeof(person));
+  console.log(typeof(isTrue));
+  console.log(typeof(num2));
+  console.log(typeof(undi));
+  console.log(typeof(symb));
 
  
 })();
