@@ -6,23 +6,23 @@
   let population; 
   let Capitol;
 
-  function describeCountry(chosenCountry){
+  function describeCountry(country, population, Capitol){
     
-    switch(chosenCountry) {
-      case 'Japan':
-        population = 126.3;
-        Capitol = 'Tokyo';
-        break;
-      case 'Israel':
-        population = 9;
-        Capitol = 'Tel Aviv';
-      case 'USA':
-        population = 328.2;
-        Capitol = 'Washington DC';
-        break;
+    // switch(chosenCountry) {
+    //   case 'Japan':
+    //     population = 126.3;
+    //     Capitol = 'Tokyo';
+    //     break;
+    //   case 'Israel':
+    //     population = 9;
+    //     Capitol = 'Tel Aviv';
+    //   case 'USA':
+    //     population = 328.2;
+    //     Capitol = 'Washington DC';
+    //     break;
         
-    }
-    console.log(chosenCountry + " Has population of " + population + " million people and its capital city is " + Capitol);
+    // }
+    console.log(country + " Has population of " + population + " million people and its capital city is " + Capitol);
 
     // if (chosenCountry === 'Japan'){
     //   population: 126.3;
@@ -42,12 +42,26 @@
   }
 
 
-  let chosenCountry = readlineSync.question("Please choose a country (out of the options : Japan, Israel, USA  : ");
+  describeCountry('Israel', 9, 'Jerusalem');
+  describeCountry('Japan', 128, 'Tokyo');
+  describeCountry('USA', 343, 'Washington DC');
   
-  describeCountry(chosenCountry);
+  
+  
+  
 
-  describeCountry('Japan');
-  describeCountry('Israel');
-  describeCountry('USA');
+
+  // let chosenCountry = readlineSync.question("Please choose a country (out of the options : Japan, Israel, USA  : ");
+  
+  // describeCountry(chosenCountry);
+
+  // describeCountry('Japan');
+  // describeCountry('Israel');
+  // describeCountry('USA');
+
+
+  // let country = readlineSync.question("Please choose a country: ");
+  // let population = readlineSync.question("Please enter populaation: ");
+  // let capital = readlineSync.question("Please choose a country: ");
   
 })();
