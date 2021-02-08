@@ -1,60 +1,42 @@
-
-
-let john_1 = 189;
-let john_2 = 120;
-let john_3 = 103;
-
-let mike_1 = 189;
-let mike_2 = 120;
-let mike_3 = 103;
-
-let johnAverage;
-let mikeAverage;
-
-function johnAverageGames(john_1,john_2,john_3) {
-  johnAverage = ((john_1 + john_2 + john_3)/3);
-  johnAverage = johnAverage.toFixed(2);
-
-  return johnAverage;
+const AVG = (score1, score2, score3) => {
+  return Math.round((score1 + score2 + score3)/3);
 }
 
-function mikeAverageGames (mike_1,mike_2,mike_3) {
-  mikeAverage = ((mike_1 + mike_2 + mike_3)/3);
-  mikeAverage = mikeAverage.toFixed(2)
-
-  return mikeAverage;
-}
-
-
-function winner(johnAverage, mikeAverage){
-  if(johnAverage > mikeAverage){
-    console.log("The winner is John!");
-    return johnAverage;
+const winTeam = (teamA, teamB) => {
+  if(teamA > teamB){
+    return 1;
   }
-  else if(johnAverage < mikeAverage){
-    console.log("The winner is Mike!");
-    return mikeAverage;
+  else if(teamA < teamB){
+    return -1;
   }
-  // else{
-  //   console.log("There is a tie!");
-  // }
+  else{
+    return 0;
+  }
 }
 
+const John = AVG(89,120,103);
+const Mike = AVG(189,120,103);
+
+const winner = winTeam(John, Mike);
 
 
-// johnAverageGames(john_1,john_2,john_3);
-let john = console.log("John's team average score is: "+ johnAverageGames(john_1,john_2,john_3));
 
-// mikeAverageGames(mike_1,mike_2,mike_3);
-let mike = console.log("Mike's team average score is: "+ mikeAverageGames(mike_1,mike_2,mike_3));
+let john = console.log("John's team average score is: "+ John);
 
-if (johnAverage === mikeAverage){
-  console.log("There is a tie!");
+
+let mike = console.log("Mike's team average score is: "+ Mike);
+
+if (winner === 1){
+  console.log("John's team won with a score of: " + John);
 }
-//(johnAverage != mikeAverage)
+else if (winner === -1){
+  console.log("Mike's team won with a score of: " + Mike);
+}
 else {
-  let winWinner= console.log("His team average score is : "+ winner(johnAverage, mikeAverage));
+  console.log("It's a tie!");
 }
+
+
 
 
 
@@ -74,3 +56,18 @@ else {
 
 //   return mikeAverage;
 // }
+
+
+// function winner(johnAverage, mikeAverage){
+//   if(johnAverage > mikeAverage){
+//     console.log("The winner is John!");
+//     return johnAverage;
+//   }
+//   else if(johnAverage < mikeAverage){
+//     console.log("The winner is Mike!");
+//     return mikeAverage;
+//   }
+  // else{
+  //   console.log("There is a tie!");
+  // }
+/*}*/
