@@ -1,4 +1,4 @@
-const jumpers = [5, 5, 8, 7, -1, 5];
+const jumpers = [5, 5, 8, 7, -1, 5,-1,-1,-1,5,7,8];
 
 const jumps = () => {
     let arr = [];
