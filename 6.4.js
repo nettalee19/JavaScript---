@@ -15,7 +15,6 @@ const avgJumper = (scores) => {
         count += 1;
       }  
       
-    
     avgArray.push(avg/count);  
   }
   return (avgArray);
