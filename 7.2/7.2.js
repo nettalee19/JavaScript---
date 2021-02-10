@@ -5,9 +5,9 @@ let myCountry = {
   language: "Chinese",
   population: 1000,
   neighbours: ["Russia", "Laos", "Vietnam"],
-  // describe : function() {
-  //   return (`${this.country} has ${this.population} million people, their mother tounge is ${this.language}, they have ${this.neighbours.length} neighbouring countries and a capital called ${this.capital}`);
-  // }
+  describe : function() {
+    return (`${this.country} has ${this.population} million people, their mother tounge is ${this.language}, they have ${this.neighbours.length} neighbouring countries and a capital called ${this.capital}`);
+  },
 
   checkIsland : function(){
     let isIsland = (this.neighbours.length === 0) ? true : false;
@@ -21,6 +21,6 @@ let myCountry = {
 };
 
 // myCountry.describe();
-// let whatCountry = console.log(myCountry.describe());
+let whatCountry = console.log(myCountry.describe());
 
 let whatIsland = console.log(myCountry.checkIsland());
