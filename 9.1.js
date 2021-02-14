@@ -1,30 +1,32 @@
-const isString = (string, ) => {
-  if( typeof(string) == 'string'){
-    consoleLog(string);
-  }
 
-  else{
-    console.log("This is not a string");
-  } 
-}
+/*1*/
+// const isString = (string, ) => {
+//   if( typeof(string) == 'string'){
+//     consoleLog(string);
+//   }
 
-const consoleLog = (string) => {
-  console.log(string);
-}
+//   else{
+//     console.log("This is not a string");
+//   } 
+// }
 
-
-isString("netta");
-isString("he123");
-isString(123);
+// const consoleLog = (string) => {
+//   console.log(string);
+// }
 
 
+// isString("netta");
+// isString("he123");
+// isString(123);
 
+
+/*2*/
 const firstWordUpperCase = (string, ) => {
   
   let newString = upperMaker(string);
 
   let newString2 = newString.split('').join('-');
-  console.log(newString2);
+  return(newString2);
 }
 
 const upperMaker = (string) => {
@@ -36,31 +38,24 @@ firstWordUpperCase("hello");
 
 
 
-
-// const insertLol = (string, ) => {
-  
-//   let newString = firstWordUpperCase(string);
-
-//   let newString2 = newString.concat(lol);
-//   console.log(newString2);
-// }
-
-// insertLol("netta");
-
-
-const helloWorld = (string, ) => {
-  
-  let newString = upperMaker(string);
-
-  let newString2 = newString.split('').join('-');
-  console.log(newString2);
+/*3*/
+const printUpper = (string) => {
+  console.log(firstWordUpperCase(string));
 }
 
-const upperMaker = (string) => {
-  return(`Hello world to ${string}`);
+printUpper("good");
+
+/*4*/
+
+const helloUser =(string) => {
+  let sString = toUpper(string);
+  console.log(`Hello to ${sString}`);
 }
 
-helloWorld("netta");
-helloWorld("hello");
 
+const toUpper = (string) => {
+  let newString = string.toUpperCase();
+  return newString;
+}
 
+helloUser("morning");
