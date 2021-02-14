@@ -26,13 +26,15 @@ function getCandy (candyStore, id){
 
     for(let i =0; i < candyStore.candies.length; i++){
       if(candyStore.candies[i].id == id ){
-        return candyStore.candies[i].name;
+        return candyStore.candies[i];
       }
     }
     
 }
 
-
+const candy = getCandy(candyStore, '5hd7y');
+console.log(candy.name)
+console.log(candy.price)
 
 function getPrice (candyStore, id){
 
@@ -45,8 +47,8 @@ function getPrice (candyStore, id){
 }
 
 
-function addCandy(candyStore, id, name, price){
-    let amount = 1;
+function addCandy(candyStore, id, name, price, amount = 1){
+    // let amount = 1;
     candyStore.candies.push({name, id, price, amount});
 }
 
@@ -61,10 +63,11 @@ function buy(candyStore, id){
 }
 
 
-console.log(getCandy(candyStore, '5hd7y'));
-console.log(getCandy(candyStore, 'as12f'));
+// console.log(getCandy(candyStore, '5hd7y'));
+// console.log(getCandy(candyStore, 'as12f'));
 
-console.log(getPrice(candyStore, '5hd7y'));
-console.log(getPrice(candyStore, 'as12f'));
+// console.log(getPrice(candyStore, '5hd7y'));
+// console.log(getPrice(candyStore, 'as12f'));
 
-console.log(addCandy(candyStore, 'nl19', 'Mekupelet', 6));
+addCandy(candyStore, 'nl19', 'Mekupelet', 6);
+console.log(getCandy(candyStore, 'nl19' ))
