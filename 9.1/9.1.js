@@ -1,23 +1,23 @@
 
 /*1*/
-// const isString = (string, ) => {
-//   if( typeof(string) == 'string'){
-//     consoleLog(string);
-//   }
+const isString = (string, ) => {
+  if( typeof(string) == 'string'){
+    consoleLog(string);
+  }
 
-//   else{
-//     console.log("This is not a string");
-//   } 
-// }
+  else{
+    console.log("This is not a string");
+  } 
+}
 
-// const consoleLog = (string) => {
-//   console.log(string);
-// }
+const consoleLog = (string) => {
+  console.log(string);
+}
 
 
-// isString("netta");
-// isString("he123");
-// isString(123);
+isString("netta");
+isString("he123");
+isString(123);
 
 
 /*2*/
