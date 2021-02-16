@@ -33,9 +33,6 @@ generatePyramid(5);
 
 
 
-//console.log(shapePyramid(3))
-
-
 
 
 
