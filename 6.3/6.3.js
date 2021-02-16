@@ -7,7 +7,8 @@ const countElement =(array) => {
     
   }
   return array2;
-}
+
+
 
 
 let array = ["boo", "doooo", "hoo","ro", "hellonetta"];
