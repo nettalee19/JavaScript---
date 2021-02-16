@@ -1,34 +1,40 @@
 
-shapePyramid = (num) =>{
-  let pyrArray=[];
+// shapePyramid = (num) =>{
 
-  for(let i =1; i<=num ; i++){
-    for(let j =1; j<=i ; j++){
-      (console.log('#')) ;
-    }
+//   for(let i =0; i<num ; i++){
 
-    for(let j =1; j<num ; j++){
-      (console.log('-')) ;
-    }
+//     for(let j = 0; j <= i ; j++){
+//       (console.log('#')) ;
+//     }
+
+//     for(let j = i; j < num ; j++){
+//       (console.log('-')) ;
+//     }
+//   }
+ 
+// }
+
+// console.log(shapePyramid(3))
+
+
+generatePyramid = (num) => {
+  
+  let output = '';
+  for (let i = 1; i <= num; i++) {
+      for (let j = 1; j <= i; j++) {
+          output += '#' + '  ';
+      }
+      console.log(output);
+      output = '';
   }
-
-  
-  
 }
 
-console.log(generatePyramid(3))
+generatePyramid(5);
 
-// function generatePyramid() {
-//   var totalNumberofRows = 5;
-//   var output = '*';
-//   for (var i = 1; i <= totalNumberofRows; i++) {
-//       for (var j = 1; j <= i; j++) {
-//           output += j + '  ';
-//       }
-//       console.log(output);
-//       output = '*';
-//   }
-// }
+
+
+//console.log(shapePyramid(3))
+
 
 
 
