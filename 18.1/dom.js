@@ -15,8 +15,8 @@ btn.addEventListener('click', () =>{
 
   let num = document.querySelector('#text').value
  
-  if (num === 0 ){
-    smily.innerHTML = "No such thing as 0 smilies"
+  if (num <= 0 ){
+    smiley.innerHTML = "No such thing! try again"
   }
   else{
     for(let i=0; i <num ; i++){
