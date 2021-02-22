@@ -1,0 +1,32 @@
+.btnOne{
+  background: deeppink;
+  color:black;
+  border: 0;
+  font-size: 16px;
+  padding: 10px 20px;
+  font-family: fantasy;
+  border-radius: 10px;
+  cursor: pointer;
+  margin: 10px;
+}
+
+.btnOne:hover{
+  background: rgba(255, 20, 145, 0.377);
+  color:rgba(0, 0, 0, 0.514);
+}
+
+.btnTwo{
+  background: deeppink;
+  color:black;
+  border: 0;
+  font-size: 16px;
+  padding: 10px 20px;
+  font-family: fantasy;
+  cursor: pointer;
+  margin: 10px;
+}
+
+.btnTwo:hover{
+  background: rgba(255, 20, 145, 0.377);
+  color:rgba(0, 0, 0, 0.514);
+}

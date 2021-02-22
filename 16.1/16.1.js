@@ -9,7 +9,7 @@ function someFunction(number) {
 var firstResult = someFunction(9);
 var result = firstResult(2);
 
-//
+//at the parent b=5 and only then the child is called, then returns 5 as the parents set. the closure with child function.
 
 var a = 1;
 function b2() {
@@ -20,7 +20,7 @@ function b2() {
 b2();
 console.log(a);
 
-//it logs a as 1 becuse it's outside the function. 
+//it logs a as 1 becuse it's outside the function, global scope. b2() is not returning anything.
 
 
 let i;

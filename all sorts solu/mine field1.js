@@ -107,22 +107,22 @@
 // }
 // console.log(removePositive([1,-5,4,-2,3]));
 
-// const  positive= (arr) => {
-//   return arr.filter(x=> {return x>0}).sort((a,b) => (a-b))
+const  positive= (arr) => {
+  return arr.filter(x=> {return x>0}).sort((a,b) => (a-b))
 
   
-// }
-// console.log(positive([1,-5,4,-2,3]));
-
-const  max= (arr) => {
-  let max = arr[0]
-
-  for(let i=1; i<arr.length-1; i++){
-    if(arr[i] > max){
-      max = arr[i]
-    }
-  }
-  return max;
-
 }
-console.log(max([1,-5,4,-2,3]));
+console.log(positive([1,-5,4,-2,3]));
+
+// const  max= (arr) => {
+//   let max = arr[0]
+
+//   for(let i=1; i<arr.length-1; i++){
+//     if(arr[i] > max){
+//       max = arr[i]
+//     }
+//   }
+//   return max;
+
+// }
+// console.log(max([1,-5,4,-2,3]));
