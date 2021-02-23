@@ -1,4 +1,4 @@
-let list = document.querySelector(".list")
+
 
 const users = [
   {
@@ -21,13 +21,32 @@ const users = [
   },
   ];
 
+  const uDiv = document.querySelector(".users")
+  const orderList = document.createElement("ol")
 
-  let newUl = document.createElement('ul')
-  list.appendChild(newUl)
-  
-  let newLi = document.createElement('li')
-  
-  users.forEach(person =>{
-    newLi.appendChild.textContent(person.firstName, person.lastName)
-    console.log(person.firstName, person.lastName)
+  users.forEach((person) => {
+    const liElement = document.createElement("li")
+    liElement.textContent = person.firstName + ' ' + person.lastName
+    liElement.setAttribute('data-id',person.id)
+    orderList.append(liElement)
   })
+
+  orderList.style.listStyleType = 'none';
+  uDiv.append(orderList)
+
+
+
+  // const usersDiv = document.querySelector('.users'); //get the div from html
+
+  // const orderList = document.createElement("ol"); //creating ol
+
+  // users.forEach((user)=>{
+  //     const test  = document.createElement("li")
+  //     test.textContent = user.firstName + ' ' +user.lastName;
+  //     test.setAttribute('data-id',user.id)
+  //     orderList.append(test)
+  // })
+
+  // orderList.style.listStyleType = 'none';
+
+  // usersDiv.append(orderList)
