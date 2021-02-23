@@ -1,6 +1,6 @@
 
 
 
-document.addEventListener('paste', () =>{
-  
+document.addEventListener('paste', (event) =>{
+  paste = (event. )
 })
