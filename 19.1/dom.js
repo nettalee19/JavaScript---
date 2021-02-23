@@ -1,49 +1,15 @@
-let toMain = document.querySelector(".start-here")
-let ul = document.querySelector("#inner-list");
-let lastItem = document.querySelector(".last-item");
-let mainTitle = document.querySelector("#main-title");
-let p = document.querySelector("p");
+let first = document.querySelector(".start-here")
 
 
-function changeTitle (){
-  toMain.innerHTML = "main title"
-  console.log("netta")
-}
+first.textContent = "Main Title"
 
-changeTitle(toMain)
+let fourLi = document.createElement('li')
+fourLi.textContent = "sub title 4"
+first.nextElementSibling.firstElementChild.appendChild(fourLi)
 
+first.nextElementSibling.nextElementSibling.remove()
 
+first.previousElementSibling.textContent = "Master of the Dom"
 
+first.parentElement.nextElementSibling.textContent = "Good Morning, Netta"
 
-function addSubTitle(){
-  let li = document.createElement("li");
-  li.appendChild(document.createTextNode("sub title 4"));
-  ul.appendChild(li);
-  
-}
-addSubTitle(toMain)
-
-
-
-
-function reMove (){
-  lastItem.remove()
-}
-reMove(lastItem)
-
-
-
-
-
-function changeMainTitle (){
-  mainTitle.innerHTML = "Master Of The Dom"
-}
-
-changeMainTitle(mainTitle)
-
-
-function changeP (){
-  p.innerHTML = "Good Morning to everybody"
-}
-
-changeP(p)
