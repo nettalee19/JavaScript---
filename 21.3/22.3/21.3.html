@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div class="users"></div>
+<script>
+    const users = [
+        {
+            id: 167464,
+            firstName: "Jimmy", lastName: "Arnold",
+            email: "jimmya@gmail.com",
+        },
+        {
+            id: 578447,
+            firstName: "Martha", lastName: "Goldman", email: "gold@hotmail.com",
+        },
+        {
+            id: 864578,
+            firstName: "Tim",
+            lastName: "Burton",
+            email: "timmy.hotmail.com",
+        },];
+
+    const usersDiv = document.querySelector('.users');
+
+    const orderList = document.createElement("ol");
+
+    const str = ['itay','avi','test1','test2'];
+
+    users.forEach((user)=>{
+        const test  = document.createElement("li")
+        test.textContent = user.firstName + ' ' +user.lastName;
+        test.setAttribute('data-id',user.id)
+        orderList.append(test)
+    })
+
+    orderList.style.listStyleType = 'none';
+
+    usersDiv.append(orderList)
+    // users.forEach((user) => {
+    //     console.log(user)
+    // })
+</script>
+</body>
+</html>
