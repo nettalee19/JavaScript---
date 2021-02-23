@@ -3,6 +3,8 @@ let name = document.querySelector('[name="name"]')
 let age = document.querySelector('[name="age"]')
 let email = document.querySelector('[name="email"]')
 
+let form = document.querySelector('form')
+let p = document.createElement('p')
 
 
 btn.addEventListener("click", () =>{
@@ -11,7 +13,10 @@ btn.addEventListener("click", () =>{
     `The info you entered is: name: ${name.value}, age: ${age.value}, email: ${email.value}.  Do you confirm?`
     )
   if(shouldSubmit){
-    alert("Congratulations! You successfully sent this form")
+    //alert("Congratulations! You successfully sent this form")
+    form.remove()
+    p.textContent = "Congratulations! You successfully sent this form"
+    document.body.appendChild(p)
   }
   
 })
