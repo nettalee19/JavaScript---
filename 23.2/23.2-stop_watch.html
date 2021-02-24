@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="clock">00:00:00</div>
+<input type="button" id="start" value="start"/>
+<input type="button" id="stop" value="stop"/>
+</body>
+<script>
+    const clock = document.querySelector('#clock')
+let start = 0;
+
+setInterval(()=>{
+    start +=1;
+    clock.innerHTML =  `d : ${Math.floor(start/24/60/60%60)} h :${Math.floor(start/60/60%60)} m : ${Math.floor(start/60%60)} s : ${start%60}`
+},1000)
+
+</script>
+</html>
