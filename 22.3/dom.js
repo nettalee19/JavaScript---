@@ -17,6 +17,10 @@ input.addEventListener("keyup", ()=> {
       message.innerHTML = "Correct letter!"
       message.style.color = "green";
       guessesArray.remove()
+
+      // if(confirm ('Would you like to play another round?')){
+      //   let 
+      // }
   }
  
   else{  //(input.value !== chosenLetter){
