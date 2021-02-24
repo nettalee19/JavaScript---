@@ -4,7 +4,7 @@ let message = document.querySelector(".message")
 
 
 let input = document.querySelector(".user-answer")
-
+let playerGuesses = []
 //console.log(input.value)
 
 input.addEventListener("keyup", ()=> {
@@ -17,6 +17,14 @@ input.addEventListener("keyup", ()=> {
   else if(input.value !== chosenLetter){
     message.innerHTML = "Wrong guess!"
     message.style.color = "red";
+    console.log(playerGuesses)
+    if(playerGuesses.includes(input.value)){
+      message.innerHTML = "You already guesses that letter"
+      message.style.color = "red";
+    }
+    else{
+      playerGuesses.push(input.value)
+    }
   }
   else{
     message.remove()
