@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="hideLetter"> </div>
+<input type="text" id="myLetter" maxlength="1"/>
+<div id="allLetters"> </div>
+</body>
+<script>
+    const hideLetter = document.querySelector('#hideLetter');
+    const myLetter = document.querySelector('#myLetter');
+    const allLetters = document.querySelector('#allLetters');
+    const letter = String.fromCharCode(Math.floor(Math.random() * 26) + 97);
+
+    hideLetter.innerHTML = letter
+    myLetter.addEventListener('keyup',(e)=>{
+     if(e.key == letter){
+
+     }
+     else{
+         myLetter.value = "";
+     }
+
+        allLetters.innerHTML += e.key+',';
+
+    })
+</script>
+</html>
