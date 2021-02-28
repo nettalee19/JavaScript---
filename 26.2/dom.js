@@ -1,4 +1,4 @@
-const storm = {
+const storm = { //obj
  superPower: "flying",
  printSuperPower : printSuperPower,
 }
