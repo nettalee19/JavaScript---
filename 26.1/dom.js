@@ -36,11 +36,11 @@ const myFuncArrow = () => {
 }; 
 myFuncArrow();
 
-//
+//this is a callback function which reffers to the global scope. 
 document.querySelector(".element").addEventListener(() => {
   console.log(this);
 });
 
 document.querySelector(".element").addEventListener(() => {
   console.log(this);
-});
+}, this);
