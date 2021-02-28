@@ -24,3 +24,7 @@
   myObj.greet();
   //const greetPerson = new myObj('Timmy')
 //})
+
+const myFuncDec = function () {
+  console.log(this);
+};
