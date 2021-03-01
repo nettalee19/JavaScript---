@@ -1,25 +1,35 @@
-
-
 function makeAllCaps(arr) {
-  return new Promise((resolve, reject) => {
-    let noString = arr.flter((str)=>{
+  return new Promise((resolve, reject) =>{
+    let noString = arr.filter((str) =>{
       return typeof str !== "string"
     })
-    if(noString.length){
-      reject('at least one element is not a string')
-    } 
+    if(noString.length !== 0){
+      reject('at least one item not a string')
+    }
     else{
-      resolve(arr.map((str)=> {
+      resolve(arr.map((str) => {
         return str.toUpperCase()
       }))
     }
   })
 }
 
-makeAllCaps(arr).then((result) => {
-  console.log(result)
-})
+function sortWords(arr){
+  return new Promise((resolve, reject) =>{
+    if(arr.length > 0){
+      resolve(arr.sort())
+    }
+    else {
+      reject('array is empty')
+    }
+  })
 
+
+}
+
+//console.log(makeAllCaps())
+console.log(makeAllCaps(["netta", "avidan"])) ;
+console.log(sortWords(["netta", "avidan"])) ;
 
 
 
